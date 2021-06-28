@@ -66,3 +66,34 @@ if (markBMI > johnBMI) {
     `Johns's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI}).`
   );
 }
+
+// Type conversion on a string
+
+const inputYear = '1992';
+const inputYearAsNum = Number(inputYear);
+console.log(inputYear, inputYearAsNum);
+
+const numAsNum = 1;
+const numAsString = String(numAsNum);
+console.log(numAsNum, numAsString);
+
+// 5 falsy numbers in JS are: 0, '', undefined, null, NaN
+
+const money = 0;
+if (money) {
+  console.log('This is a truthy value!');
+} else {
+  console.log('This is a falsy value!');
+}
+
+// === does not use type coercion, == does.
+
+const favourite = prompt('What is your favourite number?');
+
+if (favourite == 23) {
+  console.log('The input was type coerced.');
+} else if (favourite === '23') {
+  console.log('The input is strict.');
+} else {
+  console.log('Nothing to see here.');
+}
