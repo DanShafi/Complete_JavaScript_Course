@@ -128,3 +128,5 @@ switch (day) {
   default:
     console.log('Invalid selection');
 }
+
+// Update
