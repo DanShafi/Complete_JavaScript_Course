@@ -67,7 +67,7 @@
 //   );
 // }
 
-// // Type conversion on a string
+// // TYPE CONVERSION AND COERCION
 
 // const inputYear = '1992';
 // const inputYearAsNum = Number(inputYear);
@@ -113,20 +113,24 @@
 
 // SWITCH STATEMENT
 
-const day = prompt('What day would you like to see?');
+// const day = prompt('What day would you like to see?');
 
-switch (day) {
-  case 'monday':
-    console.log('You are working 8-9');
-    break;
-  case 'tuesday':
-    console.log('You are working 8-8');
-    break;
-  case 'wednesday':
-    console.log('You have a day off!');
-    break;
-  default:
-    console.log('Invalid selection');
-}
+// switch (day) {
+//   case 'monday':
+//     console.log('You are working 8-9');
+//     break;
+//   case 'tuesday':
+//     console.log('You are working 8-8');
+//     break;
+//   case 'wednesday':
+//     console.log('You have a day off!');
+//     break;
+//   default:
+//     console.log('Invalid selection');
+// }
 
-// Update
+// CONDITIONAL OPERATOR (TERNARY)
+
+// const age = 23;
+// const check = age >= 18 ? 'true ✅' : 'false';
+// console.log(check);
