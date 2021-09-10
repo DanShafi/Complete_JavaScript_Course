@@ -134,3 +134,20 @@
 // const age = 23;
 // const check = age >= 18 ? 'true ✅' : 'false';
 // console.log(check);
+
+// CODING CHALLENGE 4
+
+const standardTip = 0.15;
+const greaterTip = 0.2;
+const billAmount = prompt('How much is the bill?');
+
+const calculatedAmount =
+  billAmount >= 50 && billAmount <= 300
+    ? billAmount * standardTip
+    : billAmount * greaterTip;
+
+const billTotal = `The bill was ${billAmount}, the tip was ${calculatedAmount} and the total value is ${Number(
+  billAmount
+) + Number(calculatedAmount)}.`;
+
+console.log(billTotal);
