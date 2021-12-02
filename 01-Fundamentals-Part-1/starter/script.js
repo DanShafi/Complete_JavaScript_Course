@@ -146,7 +146,7 @@ const calculatedAmount =
     ? billAmount * standardTip
     : billAmount * greaterTip;
 
-const billTotal = `The bill was ${billAmount}, the tip was ${calculatedAmount} and the total value is ${Number(
+const billTotal = `The bill was £${billAmount}, the tip was £${calculatedAmount} and the total value is £${Number(
   billAmount
 ) + Number(calculatedAmount)}.`;
 
