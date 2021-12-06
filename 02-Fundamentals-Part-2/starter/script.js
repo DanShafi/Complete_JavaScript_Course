@@ -50,10 +50,18 @@ const myDetails = {
   birthYear: 1992,
   profession: 'Software Engineer',
   languages: ['JavaScript', 'React', 'Python'],
+  hasDriversLicense: true,
 
   calcAge: function(birthYear) {
+    console.log(this.name);
     return 2021 - birthYear;
+  },
+
+  getSummary: function() {
+    return `${this.name} is a ${this.calcAge(1992)} year old ${this.profession} and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
   }
 };
 
 console.log(myDetails.calcAge(myDetails.birthYear));
+console.log(myDetails.getSummary());
+ 
