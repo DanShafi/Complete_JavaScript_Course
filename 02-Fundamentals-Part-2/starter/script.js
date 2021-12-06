@@ -45,23 +45,80 @@ console.log(total);
 
 // console.log(myDetails.languages[1]);
 
-const myDetails = {
-  name: 'Danish',
-  birthYear: 1992,
-  profession: 'Software Engineer',
-  languages: ['JavaScript', 'React', 'Python'],
-  hasDriversLicense: true,
 
-  calcAge: function(birthYear) {
-    console.log(this.name);
-    return 2021 - birthYear;
-  },
+/////////// OBJECT METHODS
 
-  getSummary: function() {
-    return `${this.name} is a ${this.calcAge(1992)} year old ${this.profession} and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
-  }
-};
+// const myDetails = {
+//   name: 'Danish',
+//   birthYear: 1992,
+//   profession: 'Software Engineer',
+//   languages: ['JavaScript', 'React', 'Python'],
+//   hasDriversLicense: true,
 
-console.log(myDetails.calcAge(myDetails.birthYear));
-console.log(myDetails.getSummary());
- 
+//   calcAge: function(birthYear) {
+//     console.log(this.name);
+//     return 2021 - birthYear;
+//   },
+
+//   getSummary: function() {
+//     return `${this.name} is a ${this.calcAge(1992)} year old ${this.profession} 
+//     and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+//   }
+// };
+
+// console.log(myDetails.calcAge(myDetails.birthYear));
+// console.log(myDetails.getSummary());
+
+// const mark = {
+//   fullName: "Mark Miller",
+//   weight: 78,
+//   height: 1.69,
+
+//   calcBMI: function() {
+//     this.bmi = this.weight / this.height ** 2;
+//     return this.bmi;
+//   }
+// }
+
+// const john = {
+//   fullName: "John Smith",
+//   weight: 92,
+//   height: 1.95,
+
+//   calcBMI: function() {
+//     this.bmi = this.weight / this.height ** 2;
+//     return this.bmi;
+//   }
+// }
+
+// console.log(mark.calcBMI());
+// console.log(john.calcBMI());
+// console.log(john.bmi);
+
+/////////////LOOPING METHODS
+
+// for (rep = 1; rep <= 10; rep++ ) {
+//   console.log(`Countup to lifts starts at ${rep}`)
+// };
+
+// const danArr = [
+//   'Danish',
+//   'Shafi',
+//   1992,
+//   'Software Engineer',
+//   ['React', 'JavaScript', 'SQL']
+// ]
+
+// let i;
+// for (i = 0; i < danArr.length; i++) {
+//   console.log(danArr[i])
+// };
+
+const years = [1991, 1992, 1993, 1994, 1995];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2021 - years[i]); 
+}
+
+console.log(ages);
