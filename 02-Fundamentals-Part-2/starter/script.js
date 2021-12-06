@@ -114,11 +114,23 @@ console.log(total);
 //   console.log(danArr[i])
 // };
 
-const years = [1991, 1992, 1993, 1994, 1995];
-const ages = [];
+// const years = [1991, 1992, 1993, 1994, 1995];
+// const ages = [];
 
-for (let i = 0; i < years.length; i++) {
-  ages.push(2021 - years[i]); 
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2021 - years[i]); 
+// }
+
+// console.log(ages);
+
+// let i = 0;
+// while (i <= 10) {
+//   console.log(i)
+//   i++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
-
-console.log(ages);
