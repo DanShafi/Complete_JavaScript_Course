@@ -129,8 +129,27 @@ console.log(total);
 //   i++;
 // }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
-while (dice !== 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-}
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+// }
+
+/////// CODING CHALLENGE 4
+
+// const calcTip = billValue =>
+//   billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue * 0.2;
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//   let tip = calcTip(bills[i]);
+//   tips.push(tip);
+//   totals.push(tip + bills[i])
+// }
+
+// console.log(tips);
+// console.log(totals);
+
