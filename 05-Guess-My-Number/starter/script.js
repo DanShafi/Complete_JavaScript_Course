@@ -1,9 +1,8 @@
 'use strict';
 
-const randomNumber = Math.trunc(Math.random() * 20 + 1);
-const numberToGuess = document.querySelector('.number').textContent = randomNumber;
-
 const checkBtn = document.querySelector('.check');
+const randomNumber = Math.trunc(Math.random() * 20 + 1);
+
 checkBtn.addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
     const displayMsg = document.querySelector('.message');
@@ -27,17 +26,18 @@ checkBtn.addEventListener('click', function() {
     if (!guess) {
         displayMsg.textContent = '❌ No number!';
 
-    } else if (guess === numberToGuess) {
+    } else if (guess === randomNumber) {
         displayMsg.textContent = '🎉 Winner!';
+        document.querySelector('.number').textContent = randomNumber;
         document.body.style.backgroundColor = "#60b347";
         highScore.textContent = score.textContent;
 
-    } else if (guess > numberToGuess) {
+    } else if (guess > randomNumber) {
         displayMsg.textContent = '👆🏻 Too High!';
         decrement();
         loseGame();
     
-    } else if (guess < numberToGuess) {
+    } else if (guess < randomNumber) {
         displayMsg.textContent = '👇🏼 Too Low!';
         decrement();
         loseGame();
